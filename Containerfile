@@ -656,6 +656,7 @@ RUN /usr/libexec/containerbuild/build-initramfs && \
         sed -i '/^PRETTY_NAME/s/Silverblue/Bazzite GNOME/' /usr/lib/os-release \
     ; fi && \
     systemctl disable waydroid-container.service && \
+    curl -Lo /usr/etc/dxvk-example.conf https://raw.githubusercontent.com/doitsujin/dxvk/master/dxvk.conf && \
     curl -Lo /usr/bin/waydroid-choose-gpu https://raw.githubusercontent.com/KyleGospo/waydroid-scripts/main/waydroid-choose-gpu.sh && \
     chmod +x /usr/bin/waydroid-choose-gpu && \
     ostree container commit
@@ -695,8 +696,7 @@ RUN rpm-ostree override remove \
         rpm-ostree install \
             steamdeck-gnome-presets \
             gnome-shell-extension-caribou-blocker \
-            sddm && \
-        curl -Lo /usr/etc/dxvk-example.conf https://raw.githubusercontent.com/doitsujin/dxvk/master/dxvk.conf \
+            sddm \
     ; fi && \
     ostree container commit
 
