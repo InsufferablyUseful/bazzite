@@ -4,7 +4,7 @@
 
 [![build-bazzite](https://github.com/ublue-os/bazzite/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/bazzite/actions/workflows/build.yml) [![build-bazzite-isos](https://github.com/ublue-os/bazzite/actions/workflows/build_iso.yml/badge.svg)](https://github.com/ublue-os/bazzite/actions/workflows/build_iso.yml)
 
-# [🇺🇸](https://github.com/ublue-os/bazzite/blob/main/README.md) [🇪🇸](https://github.com/ublue-os/bazzite/blob/main/README-SPA.md) [🇮🇩](https://github.com/ublue-os/bazzite/blob/main/README-ID.md) [:cn:](https://github.com/ublue-os/bazzite/blob/main/README-zh-cn.md) [🇫🇷](https://github.com/ublue-os/bazzite/blob/main/README-FR.md)
+# [🇺🇸](https://github.com/ublue-os/bazzite/blob/main/README.md) [🇪🇸](https://github.com/ublue-os/bazzite/blob/main/README-SPA.md) [🇮🇩](https://github.com/ublue-os/bazzite/blob/main/README-ID.md) [:cn:](https://github.com/ublue-os/bazzite/blob/main/README-zh-cn.md) [🇫🇷](https://github.com/ublue-os/bazzite/blob/main/README-FR.md) [🇳🇱](https://github.com/ublue-os/bazzite/blob/main/README-NL.md)
 
 <p align="center">
   <a href="https://download.bazzite.gg/"><img src="/repo_content/download.png?raw=true" alt="Download Bazzite"/></a>
@@ -57,13 +57,13 @@ O Bazzite é feito a partir do [ublue-os/main](https://github.com/ublue-os/main)
 - [Extensão do shell ROM Properties Page](https://github.com/GerbilSoft/rom-properties) inclusa.
 - Suporte completo a [Winesync/Fastsync/NTsync](https://github.com/Frogging-Family/wine-tkg-git/issues/936).
 - [Distrobox](https://github.com/89luca89/distrobox) pré-instalado com atualizações automáticas pra containers criados pelo usuário.
-- [Ptyxis Terminal](https://gitlab.gnome.org/chergert/ptyxis) é utilizado como terminal padrão em todas as imagens. Esse terminal é feito especialmente para o workflow em containers que você deve usar no Bazzite. Se desejar restaurar o terminal padrão do Fedora, execute `ujust restore-original-terminal`
+- [Ptyxis Terminal](https://gitlab.gnome.org/chergert/ptyxis) é utilizado como terminal padrão em todas as imagens. Esse terminal é feito especialmente para o workflow em containers que você deve usar no Bazzite. Se desejar restaurar o terminal padrão do Fedora, execute `ujust _restore-original-terminal`
 - Serviço `duperemove` automatizado para reduzir o espaço em disco usado por arquivos em prefixos do wine.
 - Suporte a HDMI CEC via [libCEC](https://libcec.pulse-eight.com/).
 - [System76-Scheduler](https://github.com/pop-os/system76-scheduler) pré-instalado,  provendo ajustes automáticos de prioridade favorecendo o processo em primeiro plano e mantendo o mínimo de tempo de CPU necessário para outros processos.
 - Configuração customizada do System76-Scheduler com regras adicionais.
 - Usa o [controle de congestionamento TCP BBR da Google](https://github.com/google/bbr) por padrão.
-- [Input Remapper](https://github.com/sezanzeb/input-remapper) pré-instalado e habilitado. <sub><sup>(Disponível mas desabilitado por padrão na versão Deck, ative executando `ujust restore-input-remapper`)</sup></sub>
+- [Input Remapper](https://github.com/sezanzeb/input-remapper) pré-instalado e habilitado. <sub><sup>(Disponível mas desabilitado por padrão na versão Deck, ative executando `ujust _restore-input-remapper`)</sup></sub>
 - O Bazzite Portal traz um jeito simples de instalar múltiplos aplicativos e ajustes, incluindo a instalação do [LACT](https://github.com/ilya-zlobintsev/LACT) e do [GreenWithEnvy](https://gitlab.com/leinardi/gwe).
 - [Waydroid](https://waydro.id/) pré-instalado para rodar aplicativos Android. Confira esse [guia rápido](https://universal-blue.discourse.group/docs?topic=32) para configurá-lo.
 - Gerencie aplicativos usando o [Flatseal](https://github.com/tchx84/Flatseal), [Warehouse](https://github.com/flattool/warehouse), e [Gear Lever](https://github.com/mijorus/gearlever).
